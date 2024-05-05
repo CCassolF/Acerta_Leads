@@ -8,8 +8,12 @@ export default {
   extend: {
     colors: {
       'black-text': '#252433',
+      'cyan-button': '#198CFF'
     },
   },
-  plugins: [],
+  plugins: 
+  [('@tailwindcss/forms')
+  ],
+ 
 },
 }
