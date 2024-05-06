@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'source-sans-3': '"Source Sans 3", sans-serif',
+    },
   extend: {
     colors: {
       'black-text': '#252433',

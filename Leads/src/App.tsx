@@ -1,24 +1,28 @@
+import { Header } from './components/header'
 
-import logo from './assets/logo.svg'
-import { Button } from './components/buttonNewLead'
-import './index.css'
-
-function App( ) {
+export function App( ) {
   return (
-    <div className='bg-slate-100'>
-      <div className='flex-col '>
-        <div className='mx-36 py-8 '>
-          <img src={logo} className="logo" alt="ACERTA logo" />
-
+    <div className='bg-slate-100 h-screen'>
+      <Header/>
+      <div className='bg-white w-[1082px] mx-auto mt-7 p-6 border rounded-md '>
+        <div className='flex'>
+          <div className='ml-36'>
+            <label htmlFor="">CPF</label>
+            <input type="number" placeholder='Digite o CPF do cliente'/>
+          </div>
+          <div className=''>
+            <label htmlFor="">Nome do cliente</label>
+            <input type="text" placeholder='Digite o nome do cliente' />
+          </div>
         </div>
-        <div className='flex px-36 gap-[748px] justify-between text-nowrap text-lg' >
-          <h1 className='font-sans'>Consulta de Leads</h1>
-          <Button type='submit' title='Novo lead '/>
+        <div className='ml-36'>
+          <button>Limpar tudo</button>
+          <button>Filtrar</button>
         </div>
       </div>
-    </div>
+   </div>
       
   )
 }
 
-export default App
+
