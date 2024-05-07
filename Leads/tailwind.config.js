@@ -11,7 +11,8 @@ export default {
   extend: {
     colors: {
       'black-text': '#252433',
-      'cyan-button': '#198CFF'
+      'cyan-button': '#198CFF',
+      'gray-text':' #B9C2CB'
     },
   },
   plugins: 
